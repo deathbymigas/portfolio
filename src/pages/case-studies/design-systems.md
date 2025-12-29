@@ -20,13 +20,13 @@ I made the case to leadership to establish a scalable design system and introduc
 
 ### Before
 
-<figure class="case-figure">
+<figure>
   <img src="/prism-events-list-before.png" alt="Screenshot of the legacy Prism events list" />
   <figcaption>The legacy events list also doubled as a pseudo-dashboard meant to provide an overview of event financial performance, although the information provided was not always intuitive. This came with the tradeoff of being unable to quickly find and navigate to an event.</figcaption>
 </figure>
 
 ### After
-<figure class="case-figure">
+<figure>
   <img src="/prism-events-list-after.png" alt="Screenshot of the redesigned Prism events list" />
   <figcaption>Redesigned events list using the new design system. Users can quickly scan to find events expand a specific event to see event financials at a glance.</figcaption>
 </figure>
@@ -46,7 +46,7 @@ To address these issues, I focused on creating a modular, scalable system that p
 - **Material Design:** Leveraged Material Angular components already in use by developers to reduce build time and ensure consistency
 These changes were implemented iteratively across product sprints, allowing the new design language to evolve alongside legacy systems without requiring a full redesign upfront.
 
-<figure class="case-figure">
+<figure>
   <img src="/prism-atomic-design.png" alt="A diagram showing the atomic structure of a Prism date picker" />
   <figcaption>Anatomy of a date picker. There are two use cases being shown here. One, talent buyers are often juggling multiple events on the same day, making it important to see at a glance which dates already have confirmed events. The other is a generic date range selector for filtering events.</figcaption>
 </figure>
@@ -65,17 +65,17 @@ Rather than pursuing a wholesale redesign, I implemented changes incrementally a
 - Creating component documentation that bridged design and development
 - Redesigning high-impact pages like event lists and detail pages
 
-### Before
-<figure class="case-figure">
+### Before & After
+<div class="image-pair">
+<figure>
   <img src="/prism-event-detail-mobile-before.png" alt="A mobile screenshot of a legacy event detail page" />
   <figcaption>Mobile event detail pages were cluttered and lacked clear visual hierarchy.</figcaption>
 </figure>
-
-### After
-<figure class="case-figure">
+<figure>
   <img src="/prism-event-detail-mobile-after.png" alt="A mobile screenshot of the redesigned event detail page" />
   <figcaption>Redesigned mobile event detail page using new design language system. This updated design is much more information-dense than the “before” example as the product’s capabilities continued to grow.</figcaption>
 </figure>
+</div>
 
 ## Impact
 The design system implementation delivered measurable improvements:
@@ -84,7 +84,7 @@ The design system implementation delivered measurable improvements:
 - Improved user satisfaction, with customers proactively sharing positive feedback
 - Supported business growth through the pandemic, contributing to 115% revenue increase and successful Series A funding
 
-<figure class="case-figure">
+<figure>
   <img src="/prism-route-sheet.png" alt="Screenshot of a conceptual design for tour management" />
   <figcaption>An MVP concept for tour management, demonstrating that Material 2.0 didn’t have to be completely boring.</figcaption>
 </figure>
@@ -93,7 +93,7 @@ This foundational work established design operations that scaled with the compan
 
 Users regularly shared positive feedback following design updates, and the improved product experience contributed to major business outcomes, including $1.3M in revenue during a pandemic year and <a href="https://prism.fm/blog/product-updates-news/prism-announces-8-million-series-a-funding/" target="_blank" rel="noopener noreferrer">a successful $8M Series A<span class="sr-only"> (opens in new tab)</span></a>.
 
-<figure class="case-figure">
+<figure>
   <img src="/prism-hannibal-buress.png" alt="Screenshot of comedian Hannibal Buress asking about Prism.fm on his LinkedIn account" />
   <figcaption>Turns out, Hannibal Buress is familiar with my work.</figcaption>
 </figure>

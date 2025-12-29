@@ -197,6 +197,33 @@ blockquote > a {
   font-weight: 600;
 }
 
+.image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.image-pair figure {
+  margin: 0;
+}
+
+.image-pair img {
+  width: 100%;
+  height: auto;
+}
+
+.image-pair figcaption {
+  margin-top: var(--space-xs);
+}
+
+/* Stack on mobile if needed */
+@media (max-width: 600px) {
+  .image-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Mobile Responsive Typography */
 @media (max-width: 768px) {
   :root {

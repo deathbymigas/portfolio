@@ -19,7 +19,7 @@ Through initial research, I learned that instructors frequently create assessmen
 
 This inspired the core design question: *How might we eliminate the need for manual content entry so that instructors can create assessments more efficiently?*
 
-<figure class="case-figure">
+<figure>
   <img src="/blackboard-upload.png" alt="Mockup of native assessment upload in Blackboard Learn Ultra" />
   <figcaption>The solution: direct .docx upload to the Learn Ultra assessment canvas, reducing manual data entry and eliminating third-party tool dependencies.</figcaption>
 </figure>
@@ -43,7 +43,7 @@ Working with Product Management and Development, I led the research effort to co
 - Contextual inquiries to understand current assessment creation workflows
 - Concept evaluation interviews to validate proposed solutions
 
-<figure class="case-figure">
+<figure>
   <img src="/blackboard-mural.png" alt="Screenshot of the Mural board we used for synthesizing concept evaluation insights" />
   <figcaption>Mural board for concept evaluation synthesis.</figcaption>
 </figure>
@@ -79,7 +79,7 @@ I created detailed wireframes, user flows, and functional specifications coverin
 
 This solution balanced technical feasibility with user needs, providing a scalable foundation for future enhancement.
 
-<figure class="case-figure">
+<figure>
   <img src="/blackboard-wireframes.png" alt="Wireframes showing the error handling workflow for native assessment import" />
   <figcaption>Lo-fi wireframes of the error handling workflow.</figcaption>
 </figure>
