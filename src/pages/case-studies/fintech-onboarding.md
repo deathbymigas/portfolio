@@ -22,7 +22,7 @@ The result was a redesigned registration experience that reduces friction, impro
 The original flow was form-heavy, lacked clear progress indication, and failed to communicate information requirements upfront, often asking for duplicate info from one screen to the next.
 
 <figure class="case-figure">
-  <img src="../../../public/onramp-before.png" alt="Form-heavy page from the legacy onboarding experience" />
+  <img src="/onramp-before.png" alt="Form-heavy page from the legacy onboarding experience" />
   <figcaption>Example screen from the legacy onboarding experience.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ The original flow was form-heavy, lacked clear progress indication, and failed t
 
 <div style="overflow: hidden;">
   <video controls width="100%" style="display: block; transform: translateX(1px) translateY(1px);">
-    <source src="../../../public/onramp-onboarding-walkthrough.mp4" type="video/mp4">
+    <source src="/onramp-onboarding-walkthrough.mp4" type="video/mp4">
     Your browser doesn't support video.
   </video>
 </div>
@@ -51,7 +51,7 @@ I collaborated with stakeholders to redesign the onboarding experience by balanc
 - Rewrote prompts in a conversational tone to create a more human, less transactional experience
 
 <figure class="case-figure">
-  <img src="../../../public/onramp-figma.png" alt="Figma screenshot showing early UX work for the revised onboarding experience, along with the legacy flow and “Lean UX”-style problem and hypothesis statements" />
+  <img src="/onramp-figma.png" alt="Figma screenshot showing early UX work for the revised onboarding experience, along with the legacy flow and “Lean UX”-style problem and hypothesis statements" />
   <figcaption>The initial flow was cumbersome and lacked a modern look and feel. I worked with Onramp to rethink this signup flow from start to finish.</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Rather than only reducing form fields, I focused on two complementary approaches
 - Chunked complex processes into digestible steps with clear progress indication
 
 <figure class="case-figure">
-  <img src="../../../public/onramp-systems-map.png" alt="Another Figma screenshot showing a current and proposed systems diagram along with recommendations to reduce or mitigation friction in the onboarding experience" />
+  <img src="/onramp-systems-map.png" alt="Another Figma screenshot showing a current and proposed systems diagram along with recommendations to reduce or mitigation friction in the onboarding experience" />
   <figcaption>Another example Figma deliverable showing a systems diagram of the legacy and proposed onboarding flows along with potential completion incentives for new users. ORF stands for “Onboarding to requesting funds.”</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Rather than only reducing form fields, I focused on two complementary approaches
 - Used “oversized” components to reduce visual intimidation and cognitive load
 
 <figure class="case-figure">
-  <img src="../../../public/onramp-mobile.png" alt="Mockups of responsive mobile views for the revised onboarding flow" />
+  <img src="/onramp-mobile.png" alt="Mockups of responsive mobile views for the revised onboarding flow" />
   <figcaption>Mobile views highlighting some “friendlier” components along with input requirements rewritten to sound more conversational.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ Rather than only reducing form fields, I focused on two complementary approaches
 I simultaneously updated the product’s design system, establishing patterns for navigation, modals, and progressive information disclosure that supported both immediate needs and future scalability.
 
 <figure class="case-figure">
-  <img src="../../../public/onramp-figma-design-system.png" alt="Figma screenshot showing foundational documentation for the revised Onramp design system" />
+  <img src="/onramp-figma-design-system.png" alt="Figma screenshot showing foundational documentation for the revised Onramp design system" />
   <figcaption>Work-in-progress design system documentation I put together for Onramp.</figcaption>
 </figure>
 
