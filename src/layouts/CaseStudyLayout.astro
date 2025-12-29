@@ -1,0 +1,36 @@
+---
+const { frontmatter } = Astro.props;
+const { client } = frontmatter;
+import "../styles/global.css";
+import Header from '../components/header.astro';
+import OnrampSummary from '../components/OnrampSummary.astro';
+import PrismSummary from '../components/PrismSummary.astro';
+import BlackboardSummary from '../components/BlackboardSummary.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter?.title ?? 'Case Study'}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<meta name="description" content={frontmatter?.description ?? 'Case study'} />
+	</head>
+	<body>
+		<main class="container">
+			<Header variant="casestudy" />
+			<h1>{frontmatter?.title}</h1>
+
+			{frontmatter.summaryType === 'onramp' && <OnrampSummary {...frontmatter} />}
+			{frontmatter.summaryType === 'prism' && <PrismSummary {...frontmatter} />}
+			{frontmatter.summaryType === 'blackboard' && <BlackboardSummary {...frontmatter} />}
+
+			<slot />
+		</main>
+	</body>
+</html>

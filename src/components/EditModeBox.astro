@@ -1,0 +1,130 @@
+---
+interface Props {
+  as?: 'div' | 'a' | 'h1' | 'h2' | 'h3';
+  variant?: 'large' | 'small' | 'card-title';
+  href?: string;
+  ariaLabel?: string;
+  class?: string;
+}
+
+const { as = 'div', variant = 'large', href, ariaLabel, class: className } = Astro.props;
+const Tag = as;
+---
+
+<Tag 
+  class={`edit-mode-container edit-mode-${variant} ${className || ''}`}
+  href={href}
+  aria-label={ariaLabel}
+>
+  <div class="edit-mode-inner">
+    <slot />
+  </div>
+</Tag>
+
+<style>
+  .edit-mode-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--color-edit-mode);
+  }
+  
+  .edit-mode-inner {
+    padding: 12px 32px;
+    position: relative;
+  }
+  
+  /* Top-left corner */
+  .edit-mode-container::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color-edit-mode);
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+  
+  /* Top-right corner */
+  .edit-mode-container::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color-edit-mode);
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+  
+  /* Bottom-left corner */
+  .edit-mode-inner::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color-edit-mode);
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+  
+  /* Bottom-right corner */
+  .edit-mode-inner::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color-edit-mode);
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+  
+  .edit-mode-large {
+    font-family: var(--font-mono);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .edit-mode-small {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+  
+  .edit-mode-card-title {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+  }
+  
+  @media (max-width: 768px) {
+    .edit-mode-large {
+      font-size: 20px;
+      margin-top: var(--space-md);
+    }
+    
+    .edit-mode-small {
+      font-size: 14px;
+      margin-top: var(--space-md);
+    }
+    
+    .edit-mode-card-title {
+      font-size: 16px;
+    }
+</style>
